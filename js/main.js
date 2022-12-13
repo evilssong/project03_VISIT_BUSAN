@@ -314,7 +314,10 @@ window.addEventListener("DOMContentLoaded", function(){
 	let html=document.querySelector("html");
 	let header=document.getElementById("header");
 
-	window.addEventListener("resize", init);
+	window.addEventListener("resize", function(){
+		if(isMobile) return;
+		init()
+	});
 
 	function init(){
 
