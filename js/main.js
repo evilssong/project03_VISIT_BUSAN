@@ -97,6 +97,8 @@ window.addEventListener("DOMContentLoaded", function(){
 	let videoN=0;
 	let videoList1=["slidervdeo1_1.mp4", "slidervdeo1_2.mp4"]
 	let videoList2=["slidervdeo2_1.mp4", "slidervdeo2_2.mp4"]
+	let posterList1=["post_vdeo1_1.jpg", "post_vdeo1_2.jpg"]
+	let posterList2=["post_vdeo2_1.jpg", "post_vdeo2_2.jpg"]
 	let videoTotal1=videoList1.length;
 	let videoTotal2=videoList2.length;
 
@@ -123,12 +125,14 @@ window.addEventListener("DOMContentLoaded", function(){
 				if(activeNum == 0){
 					slider_video1.play();
 					slider_video2.setAttribute("src", "video/slidervdeo2_1.mp4");
+					slider_video2.setAttribute("poster", "images/post_vdeo2_1.jpg");
 					slider_video2.currentTime=0;
 					slider_video2.pause();
 				}
 				else if(activeNum == 1){
 					slider_video2.play();
 					slider_video1.setAttribute("src", "video/slidervdeo1_1.mp4");
+					slider_video1.setAttribute("poster", "images/post_vdeo1_1.jpg");
 					slider_video1.currentTime=0;
 					slider_video1.pause();
 				}
@@ -145,6 +149,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 
 		slider_video1.setAttribute("src", "video/"+videoList1[videoN]);
+		slider_video1.setAttribute("poster", "images/"+posterList1[videoN]);
 		slider_video1.play();
 
 		gsap.fromTo(slider_video1, {opacity: 0, delay: 3}, {opacity: 1, duration:1});
@@ -159,6 +164,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 
 		slider_video2.setAttribute("src", "video/"+videoList2[videoN]);
+		slider_video2.setAttribute("poster", "images/"+posterList2[videoN]);
 		slider_video2.play();
 		gsap.fromTo(slider_video2, {opacity: 0, delay: 3}, {opacity: 1, duration:1});
 	});
