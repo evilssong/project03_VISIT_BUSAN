@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<title>VISIT BUSAN</title>
+	<link rel="icon" type="image/png" href="images/busan.png"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/c3e884db9c.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+	<script src="js/ismobile.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+<div class="skip_nav">
+	<a href="#section1">본문 바로가기</a>
+	<a href="#gnb">메뉴 바로가기</a>
+</div>
+<div class="wrapper">
+	<header id="header" class="fpage">
+		<div class="header_inner">
+			<div class="header_top">
+				<div class="logo">
+					<h1><a href=""><img src="images/logo_white.png" alt="로고"></a></h1>
+				</div>
+				<nav id="gnb">
+					<ul>
+						<li>
+							<a href="">부산에 가면
+								<p class="m_btn">
+									<span class="up"></span>
+									<span class="down"></span>
+								</p>
+							</a>
+							<ul>
+								<li><a href="">명소</a></li>
+								<li><a href="">음식</a></li>
+								<li><a href="">숙박</a></li>
+								<li><a href="">쇼핑</a></li>
+								<li><a href="">축제</a></li>
+								<li><a href="">내주변</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">추천 여행
+								<p class="m_btn">
+									<span class="up"></span>
+									<span class="down"></span>
+								</p>								
+							</a>
+							<ul>
+								<li><a href="">일정여행</a></li>
+								<li><a href="">테마여행</a></li>
+								<li><a href="">미식투어</a></li>
+								<li><a href="">해양·체험</a></li>
+								<li><a href="">부산 액티비티</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">여행 준비
+								<p class="m_btn">
+									<span class="up"></span>
+									<span class="down"></span>
+								</p>								
+							</a>
+							<ul>
+								<li><a href="">여행큐레이션</a></li>
+								<li><a href="">가이드북&지도</a></li>
+								<li><a href="">문화관광해설사</a></li>
+								<li><a href="">여행준비정보</a></li>
+								<li><a href="">뉴스레터</a></li>
+								<li><a href="">관광안내소</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">유용한 정보
+								<p class="m_btn">
+									<span class="up"></span>
+									<span class="down"></span>
+								</p>								
+							</a>
+							<ul>
+								<li><a href="">공지</a></li>
+								<li><a href="">이벤트</a></li>
+								<li><a href="">설문</a></li>
+								<li><a href="">공연·행사</a></li>
+								<li><a href="">부산여행상품</a></li>
+								<li><a href="">부산여행영상</a></li>
+								<li><a href="">부산여행사진</a></li>
+								<li><a href="">여행공유​</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="util">
+					<ul>
+						<li><a href=""><img src="images/search=Default.svg" alt="검색"></a></li>
+						<li><a href=""><img src="images/mypage=Default.svg" alt="마이페이지"></a></li>
+						<li><a href=""><img src="images/notification=new_alarm.svg" alt="알림"></a></li>
+						<li>
+							<a href="" class="tab">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main_slider">
+				<div class="swiper mainSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="video_area">
+								<video id="slider_video1" src="video/slidervdeo1_1.mp4"></video>
+							</div>
+							<div class="desc">
+								<p>갈매기, 오륙도, 산, 바다, 강</p>
+								<span>관광, 경제, 교육, 문화의 역동하는 부산광역시<br>
+										부산의 매력에 빠질 시간입니다.</span>
+								<div class="view">
+									<a href="">VIEW</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="video_area">
+								<video id="slider_video2" src="video/slidervdeo2_1.mp4"></video>
+							</div>
+							<div class="desc">
+								<p>내셔널지오그래픽이 선정한<br> [2023 세계 최고 여행지 부산]</p>
+								<span>부산국제 영화제, 국제커피박물관 & 영도 커피특화거리<br>
+										수제맥주, 부산시민공원, 수제맥주</span>
+								<div class="view">
+									<a href="">VIEW</a>
+								</div>		
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>			
+			</div>
+			<div class="sub_slider">
+				<div class="swiper subswiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="">
+								<div class="event">
+									<p>행사예정</p>
+								</div>
+								<div class="title">
+									<p>부산 불꽃 축제</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="">
+								<div class="event">
+									<p>행사예정</p>
+								</div>
+								<div class="title">
+									<p>부산국제영화제</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="">
+								<div class="event">
+									<p>행사중</p>
+								</div>
+								<div class="title">
+									<p>부산국제록페스티벌</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="">
+								<div class="event">
+									<p>행사중</p>
+								</div>
+								<div class="title">
+									<p>2020 BoF</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="controller">
+						<p><span id="bar"></span></p>
+						<a href="" id="pause_play" class="pause">pause</a>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</header>
+	<div id="dim"></div>
+	<section id="section1" class="fpage">
+		
+		<div class="section_inner">
+			<div id="section1_bg">
+				<div class="swap_bg"><img src="images/section_01_event_01.jpg" alt="event1"></div>
+				<div class="swap_bg"><img src="images/section_01_event_02.jpg" alt="event1"></div>
+				<div class="swap_bg"><img src="images/section_01_event_03.jpg" alt="event1"></div>
+				<div class="swap_bg"><img src="images/section_01_event_04.jpg" alt="event1"></div>
+			</div>
+			<div class="s1_content">
+				<div class="swiper section1Swiper">
+					<div class="swiper-wrapper">
+						<div id="bg1" class="swiper-slide">
+							<div class="s1_contentbox">
+								<a href="" class="s1_t">
+									<div class="event">
+										<p>행사예정</p>
+									</div>
+									<div class="s1_title">
+										<h3>부산 불꽃 축제</h3>
+									</div>
+									<div class="date">
+										<p>2022년 11월 31일</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="s1_desc">
+										<p>날짜: 2022년 11월 31일</p>
+										<p>장소: 광안리해수욕장 일원</p>
+										<p>전화번호 : 051-713-5000</p>
+										<p>요금 : 무료(일부 유료)</p>
+										<p>홈페이지 : www.bfo.or.kr</p>
+										<p>행사시간 : 18:00~21:00</p>
+									</div>
+								</a>
+								<div class="homepage">
+									<a href="">
+										<i class="fa-solid fa-house"></i>
+										<span>홈페이지</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="bg2" class="swiper-slide">
+							<div class="s1_contentbox">
+								<a href="" class="s1_t">
+									<div class="event">
+										<p>행사예정</p>
+									</div>
+									<div class="s1_title">
+										<h3>부산국제영화제</h3>
+									</div>
+									<div class="date">
+										<p>2022년 11월 20일</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="s1_desc">
+										<p>날짜: 2022년 11월 20일</p>
+										<p>장소 : 부산 영화의 전당</p>
+										<p>전화번호 : 1688-3010</p>
+										<p>요금 : 일반상영작 8,000원,</p>
+										<p><span>행사 및 체험 무료(일부 유료)</span></p>
+										<p>홈페이지 : www.biff.kr</p>
+									</div>
+								</a>
+								<div class="homepage">
+									<a href="">
+										<i class="fa-solid fa-house"></i>
+										<span>홈페이지</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div id="bg3" class="s1_contentbox">
+								<a href="" class="s1_t">
+									<div class="event">
+										<p>행사중</p>
+									</div>
+									<div class="s1_title">
+										<h3>부산국제록페스티벌</h3>
+									</div>
+									<div class="date">
+										<p>2022년 11월 02일</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="s1_desc">
+										<p>날짜: 2022년 11월 20일</p>
+										<p>장소 : 부산광역시 사상구 삼락동 29-46</p>
+										<p><span>삼락생태공원</span></p>
+										<p>전화번호 : 1688-3010</p>
+										<p>요금 : 홈페이지 참조</p>
+										<p>홈페이지 : busanrockfestival.com</p>
+									</div>
+								</a>
+								<div class="homepage">
+									<a href="">
+										<i class="fa-solid fa-house"></i>
+										<span>홈페이지</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div id="bg4" class="s1_contentbox">
+								<a href="" class="s1_t">
+									<div class="event">
+										<p>행사중</p>
+									</div>
+									<div class="s1_title">
+										<h3>2022 BoF</h3>
+									</div>
+									<div class="date">
+										<p>2022년 11월 20일</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="s1_desc">
+										<p>날짜: 2022년 11월 20일</p>
+										<p>장소 : 부산아시아드경기장,</p>
+										<p><span>부산시민공원 등 부산 일원</span></p>
+										<p>전화번호 : 051-780-4144</p>
+										<p>요금 : 홈페이지 참조</p>
+										<p>홈페이지 : bof.or.kr</p>
+									</div>
+								</a>
+								<div class="homepage">
+									<a href="">
+										<i class="fa-solid fa-house"></i>
+										<span>홈페이지</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="section2" class="fpage">
+		<div class="s2_box">
+			<div class="left_box">
+				<div class="lbox1 box">
+					<a href="">
+						<div class="s2_images">
+							<img src="images/section_02_banner_01.jfif" alt="을지도">
+						</div>
+						<div class="s2_title">
+							<h4>을지도</h4>
+						</div>
+					</a>
+				</div>
+				<div class="lbox3 box">
+					<a href="">
+						<div class="s2_images">
+							<img src="images/section_02_banner_03.jfif" alt="부산시민공원">
+						</div>
+						<div class="s2_title">
+							<h4>부산시민공원</h4>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="right_box">
+				<div class="rbox2 box">
+					<a href="">
+						<div class="s2_images">
+							<img src="images/section_02_banner_02.jfif" alt="국제커피박물관 & 영도 커피특화거리">
+						</div>
+						<div class="s2_title">
+							<h4>국제커피박물관 & 영도 커피특화거리</h4>
+						</div>
+					</a>
+				</div>
+				<div class="rbox4 box">
+					<a href="">
+						<div class="s2_images">
+							<img src="images/section_02_banner_04.jfif" alt="수제맥주">
+						</div>
+						<div class="s2_title">
+							<h4>수제맥주</h4>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="section3" class="fpage">
+			<div class="s3_banner">
+					<div class="swiper s3Swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="bannerbox">
+									<a href="">
+										<span></span><span></span><span></span><span></span>
+										<img src="images/section_03banner_01.png" alt="이달의 부산여행지">
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="bannerbox">
+									<a href="">
+										<span></span><span></span><span></span><span></span>
+										<img src="images/section_03banner_02.png" alt="부산의 인기여행">
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="bannerbox">
+									<a href="">
+										<span></span><span></span><span></span><span></span>
+										<img src="images/section_03banner_03.png" alt="부산 액티비티">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="hashtag">
+					<div class="hashlist">
+						<ul>
+							<li><span>#부산_</span></li>
+							<li><span>#부산진구</span></li>
+							<li><span>#언택트 관광</span></li>
+							<li><span>#바다, 나를 부르다</span></li>
+							<li><span>#역사의 시간 속으로</span></li>
+							<li><span>#삶의 흔적</span></li>
+							<li><span>#땅 끝 투어</span></li>
+							<li><span>#야경투어</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</section>
+	<footer id="footer" class="fpage">
+		<div class="footer_inner">
+			<div class="notice">
+				<div class="notice_info">
+					<div class="title">
+						<p>공지사항</p>
+						<span>소식을 전해 드립니다.</span>
+					</div>
+					<div class="more">
+						<a href="">더보기</a>
+					</div>
+				</div>
+				<div class="notice_list">
+					<ul>
+						<li>
+							<a href="">나이트페스타 홍보영상 유튜브 댓글 이벤트 당첨자 발표</a>
+							<span>2022-11-07</span>
+						</li>
+						<li>
+							<a href="">부산관광공사 사업장 행사 취소 안내</a>
+							<span>2022-10-30</span>
+						</li>
+						<li>
+							<a href="">부산 원아시아페스티벌 K-POP 콘서트 취소 안내</a>
+							<span>2022-10-30</span>
+						</li>
+						<li>
+							<a href="">태종대 다누비 On Stage 가을축제 이벤트 안내</a>
+							<span>2022-10-24</span>
+						</li>
+						<li>
+							<a href="">부산관광패스 영문 명칭 콘테스트 당첨자 발표</a>
+							<span>2022-10-20</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="guide">
+				<ul>
+					<li>
+						<a href="">
+							<div class="webfont">
+								<i class="fa-solid fa-book-open"></i>
+							</div>
+							<div class="guide_title">
+								<span>가이드북</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="webfont">
+								<i class="fa-solid fa-camera"></i>
+							</div>
+							<div class="guide_title">
+								<span>부산 여행 사진</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="webfont">
+								<i class="fa-solid fa-tv"></i>
+							</div>
+							<div class="guide_title">
+								<span>부산 여행 영상</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="webfont">
+								<i class="fa-solid fa-headset"></i>
+							</div>
+							<div class="guide_title">
+								<span>문화광광 해설사</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="webfont">
+								<i class="fa-solid fa-magnifying-glass-location"></i>
+							</div>
+							<div class="guide_title">
+								<span>여행 큐레이션</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="webfont">
+								<i class="fa-solid fa-map-location-dot"></i>
+							</div>
+							<div class="guide_title">
+								<span>내 주변</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_bottom">
+				<div class="footer_logo">
+					<img src="images/logo_gray.png" alt="로고">
+				</div>
+				<div class="tell">
+					<div class="tell1">
+						<span class="title">관광문의 전화</span><span>1330</span>
+					</div>
+					<div class="tell2">
+						<span class="title">민원대표 전화</span><span>051-120</span>
+					</div>
+				</div>
+				<div class="sns">
+					<ul>
+						<li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-blogger-b"></i></a></li>
+						<li><a href=""><i class="fa-brands fa-weibo"></i></a></li>
+					</ul>
+				</div>
+				<div class="footer_info">
+					<div class="left_info">
+						<div class="info1">
+							<a href=""><span>개인정보보호방침</span></a>
+							<a href=""><span class="space">저작권보호정책 약관</span></a>
+						</div>
+						<div class="info2">
+							<a href=""><span>행정서비스현황</span></a>
+							<a href=""><span class="space">뷰어다운로드</span></a>
+						</div>
+						<div class="copyright">
+							<span>Copyright Busan Metropolitan City. All rights reserved.</span>
+						</div>
+					</div>
+					<div class="wa">
+						<a href=""><img src="images/wa.png" alt="웹접근성"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
